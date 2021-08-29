@@ -23,7 +23,7 @@
             </div>
             <div class="row">
             <div class="col-sm-5">
-                <label id='hidden'></label>
+                <label id='hidden-message'></label>
               </div>
             </div>
           </div>
@@ -64,11 +64,11 @@
                     for(x in result_data) {
                         if(username == result_data[x].username) {
                             console.log(username == result_data[x].username)
-                            document.getElementById('hidden').innerHTML = 'Username already taken'
+                            document.getElementById('hidden-message').innerHTML = 'Username already taken'
                             break;
                         }
                         else
-                            document.getElementById('hidden').innerHTML = 'Username available'
+                            document.getElementById('hidden-message').innerHTML = 'Username available'
                     }
                 }
             }
